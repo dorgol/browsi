@@ -1,3 +1,5 @@
 pandas
 sklearn
 plotly
+matplotlib
+numpy

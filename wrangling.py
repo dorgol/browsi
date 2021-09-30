@@ -10,7 +10,6 @@ from sklearn.metrics import classification_report
 from sklearn.metrics import confusion_matrix, accuracy_score
 from sklearn.model_selection import cross_validate
 from sklearn.model_selection import train_test_split
-import naive_models
 from imblearn.over_sampling import SMOTE
 
 

@@ -14,7 +14,7 @@ from imblearn.over_sampling import SMOTE
 
 
 def load_data():
-    df = pd.read_csv('C:/Users/dorgo/Downloads/browsi_data.csv')
+    df = pd.read_csv('https://raw.githubusercontent.com/dorgol/browsi/main/browsi_data.csv')
     df[["load time (ms)", "avg scroll depth in url"]] = df[["load time (ms)", "avg scroll depth in url"]]. \
         apply(pd.to_numeric)
     df_tmp = df.drop(['ad_id', 'site_id', 'site_domain', 'user_id', 'device_vendor'], axis=1)

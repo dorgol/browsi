@@ -3,3 +3,4 @@ sklearn
 plotly
 matplotlib
 numpy
+imblearn

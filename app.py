@@ -103,7 +103,7 @@ regression model is its simplicity, albeit it can also be its challenge. Since w
 our data we will split it to train and test sets, we will also shuffle the data since it is has some consecutive
 ones. We will use the stratify option to split the data to two similar distributions.''')
 
-from experiment import load_data, split, fitting_model, predict_report, oversampling
+from wrangling import load_data, split, fitting_model, predict_report, oversampling
 from sklearn.linear_model import LogisticRegression
 
 df = load_data()

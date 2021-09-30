@@ -2,7 +2,7 @@ import pandas as pd
 import plotly.express as px
 import numpy as np
 
-df = pd.read_csv('C:/Users/dorgo/Downloads/browsi_data.csv')
+df = pd.read_csv('https://raw.githubusercontent.com/dorgol/browsi/main/browsi_data.csv')
 
 # for col in df.columns:
 #     df[col] = df[col].astype('category')
@@ -28,5 +28,5 @@ def plot_pivot(indices, cols, agg_func='sum'):
     else:
         table = pd.pivot_table(df, values='is_viewd', index=indices,
                                columns=cols, aggfunc=np.mean, fill_value=-0.1)
-    return px.imshow(table)
+    return px.imshow(table, color_continuous_scale='viridis')
 
